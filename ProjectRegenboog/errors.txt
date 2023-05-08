@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 172: end of line expected.
-    show huis1 at xpos 100 ypos 100
-                       ^
+File "game/script.rpy", line 31: expected statement.
+    defautl ziek = False
+                 ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon May  8 13:11:38 2023
+Mon May  8 13:50:51 2023

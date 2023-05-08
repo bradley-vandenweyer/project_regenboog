@@ -11,6 +11,16 @@ image huis1 = "Huis1.png"
 image huis2 = "Huis2.png"
 image huis3 = "Huis3.png"
 image huis4 = "Huis4.png"
+image huis5 = "Huis5.png"
+
+image auto1 = "auto1.png"
+image auto2 = "auto2.png"
+image auto3 = "auto3.png"
+image auto4 = "auto4.png"
+image auto5 = "auto5.png"
+image auto6 = "auto6.png"
+
+image aDokter = "Dokter.png"
 
 define e = Character("JC3")
 
@@ -25,6 +35,8 @@ default job = "werkloos"
 default currentMaand = ''
 
 default maanden = ["januari","maart", "mei", "juli", "september", "november"]
+
+default ziek = False
 
 
 
@@ -147,6 +159,18 @@ label dokter:
     show screen home
 
     show text "{color=#000}Docter pagina{/color}" at top
+
+    show aDokter:
+        xpos 300
+        ypos 100
+    
+    show text "{color=#000}Momenteel ben je niet ziek.{/color}" at truecenter
+
+    if ziek:
+        show text "{color=#000}€25 voor dokters bezoek{/color}":
+            xpos 800
+            ypos 700
+
     with dissolve
     pause 10000
 
@@ -175,6 +199,15 @@ label huis:
     show huis2:
         xpos 100
         ypos 300
+    show huis3:
+        xpos 100
+        ypos 550
+    show huis4:
+        xpos 1000
+        ypos 50
+    show huis5:
+        xpos 1000
+        ypos 300
     with dissolve
     pause 10000
 
@@ -196,6 +229,26 @@ label auto:
     show screen home
 
     show text "{color=#000}auto pagina{/color}" at top
+
+    show auto1:
+        xpos 100
+        ypos 50
+    show auto2:
+        xpos 100
+        ypos 300
+    show auto3:
+        xpos 100
+        ypos 550
+    show auto4:
+        xpos 1000
+        ypos 50
+    show auto5:
+        xpos 1000
+        ypos 300
+    show auto6:
+        xpos 1000
+        ypos 550
+
     with dissolve
     pause 10000
 
