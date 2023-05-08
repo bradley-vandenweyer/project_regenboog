@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 172, in script
+    show image Huis1 at topleft
+  File "game/script.rpy", line 172, in <module>
+    show image Huis1 at topleft
+NameError: name 'Huis1' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 172, in script
+    show image Huis1 at topleft
+  File "C:\ps1_project\renpy-8.0.3-sdk\renpy\ast.py", line 1408, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\ps1_project\renpy-8.0.3-sdk\renpy\ast.py", line 1364, in show_imspec
+    expression = renpy.python.py_eval(expression)
+  File "C:\ps1_project\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\ps1_project\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 172, in <module>
+    show image Huis1 at topleft
+NameError: name 'Huis1' is not defined
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.0.3.22090809
+Project_Regenboog 1.0
+Mon May  8 13:07:11 2023
