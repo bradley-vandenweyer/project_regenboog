@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 31: expected statement.
-    defautl ziek = False
-                 ^
+File "game/script.rpy", line 833: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon May  8 13:50:51 2023
+Tue May 16 14:32:17 2023
